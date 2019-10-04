@@ -1,0 +1,142 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav-item {
+  width: 25%;
+  margin-top: 20rpx;
+  font-size: 24rpx; /*字体大小*/
+}
+
+.hr {
+  height: 2px;
+  background-color: rgb(80, 80, 80);
+  margin-top: 10px;
+  opacity: 0.2;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 13px;
+  color: #999;
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+  color: #ccc;
+}
+
+/* 横线属性设置 */
+
+.hr2 {
+  height: 2px;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+
+/* 首页轮播图大小设置 */
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.swiper_box {
+  height: 400rpx;
+  width: 100%;
+}
+
+/*资讯*/
+.headLine {
+  width: 100%;
+}
+
+.headLineWra {
+  height: 200rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.headLineContent {
+  width: 80%;
+  height: 100%;
+}
+
+.headLineTitle {
+  width: 90%;
+  height: 86rpx;
+  line-height: 46rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 对应字体设置 */
+
+.headLineInfor {
+  width: 90%;
+  height: 20%;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.arrowsBox {
+  width: 20%;
+  height: 100%;
+}
+
+/*伸缩盒子模型*/
+
+.box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+/* 美发咨询从上至下排列 */
+.box-tb {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/*主轴左右不留白（日期和来源之间）*/
+.box-pack-between {
+  -webkit-box-pack: justify;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/*主轴左右留白*/
+.box-pack-around {
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+/*交叉轴居中对齐*/
+.box-align-center {
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

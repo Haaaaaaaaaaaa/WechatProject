@@ -1,0 +1,57 @@
+<!-- 获取用户头像、昵称等 -->
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="KG"></view>
+
+<view class="user-article">
+  <navigator url="">
+    <view class="user-order">
+      <text class="order-all">全部订单</text>
+      <view class="order-look">查看
+        <view class="iconfont icon-right"></view>
+      </view>
+    </view>
+  </navigator>
+
+  <view class="order-class">
+    <navigator class="item-order" url="">
+      <view class="iconfont icon-group">
+        <image class="img" src="../images/My/DFK.png" mode='widthFix'></image>
+      </view>
+      <text class="item--order-text">待付款</text>
+    </navigator>
+
+    <navigator class="item-order" url="">
+      <view class=" iconfont icon-pay">
+        <image class="img" src="../images/My/DFH.png" mode='widthFix'></image>
+      </view>
+      <text class="item--order-text">待发货</text>
+    </navigator>
+
+    <navigator class="item-order" url="">
+      <view class="iconfont icon-send">
+        <image class="img" src="../images/My/DSH.png" mode='widthFix'></image>
+      </view>
+      <text class="item--order-text">待收货</text>
+    </navigator>
+
+    <navigator class="item-order" url="">
+      <view class="iconfont icon-deliver">
+        <image class="img" src="../images/My/PJ.png" mode='widthFix'></image>
+      </view>
+      <text class="item--order-text">评价</text>
+    </navigator>
+
+    <navigator class="item-order" url="">
+      <view class="iconfont icon-complete">
+        <image class="img" src="../images/My/TK.png" mode='widthFix'></image>
+      </view>
+      <text class="item--order-text">退款/售后</text>
+    </navigator>
+  </view>
+</view>

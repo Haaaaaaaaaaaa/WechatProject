@@ -1,0 +1,81 @@
+<view class="content">
+  <!-- 首页轮播图片设置 -->
+  <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <navigator url="{{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" mode='widthFix' />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 美发预约、烫染套餐、优惠券、联系我们导航模块 -->
+  <view class="nav">
+    <view class="nav-item">
+      <view>
+        <navigator url="../order/order">
+          <image src="../images/DaoHang/1.png" style="width:55px;height:53px;"></image>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="../order/order" style="color:black;">美发预约</navigator>
+      </view>
+    </view>
+
+    <view class="nav-item">
+      <view>
+        <navigator url="../taocan/taocan">
+          <image src="../images/DaoHang/2.png" style="width:55px;height:53px;"></image>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="../taocan/taocan" style="color:black;">烫染套餐</navigator>
+      </view>
+    </view>
+
+    <view class="nav-item">
+      <view>
+        <navigator url="../coupon/coupon">
+          <image src="../images/DaoHang/3.png" style="width:55px;height:53px;"></image>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="../coupon/coupon" style="color:black;">优惠券</navigator>
+      </view>
+    </view>
+
+    <view class="nav-item">
+      <view>
+        <navigator url="../contact/contact">
+          <image src="../images/DaoHang/4.png" style="width:55px;height:53px;"></image>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="../contact/contact" style="color:black;">联系我们</navigator>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加横线 -->
+  <view class="hr"></view>
+
+  <!-- 美发咨询 -->
+  <view class="headLine box box-tb">
+    <view class="headLineWra box " wx:for="{{headLineList}}" bindtap="jumpDetails" data-Id="{{item.id}}">
+      <view class="headLineContent box box-tb  box-pack-around">
+        <view class="headLineTitle">
+          {{item.title}}
+        </view>
+        <view class="headLineInfor  box  box-pack-between">
+          <view class="headLineSource">
+            日期: {{item.date}}
+          </view>
+          <view class="headLineSource">
+            来源：{{item.source}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

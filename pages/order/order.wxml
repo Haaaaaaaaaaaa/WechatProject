@@ -1,0 +1,38 @@
+<!-- 轮播图设置 -->
+<swiper class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" mode='widthFix' />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 添加横线 -->
+<view class="hr"></view>
+
+<view class="title">潮·设计总监</view>
+
+<view class="A">
+  <view class="B">
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list">
+        <image src="../images/Designer/designer1.jpg" class="item_book_img" mode="widthFix"></image>
+        <view class='title'>王总监</view>
+      </view>
+      <view class="item_list">
+        <image src="../images/Designer/designer2.jpg" class="item_book_img" mode="widthFix"></image>
+        <view class='title'>李总监</view>
+      </view>
+      <view class="item_list">
+        <image src="../images/Designer/designer3.jpg" class="item_book_img" mode="widthFix"></image>
+        <view class='title'>刘总监</view>
+      </view>
+      <view class="item_list">
+        <image src="../images/Designer/designer4.jpg" class="item_book_img" mode="widthFix"></image>
+        <view class='title'>何总监</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

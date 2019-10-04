@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shop/shop",
+    "pages/huiyuan/huiyuan",
+    "pages/my/my",
+    "pages/order/order",
+    "pages/taocan/taocan",
+    "pages/coupon/coupon",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "美发沙龙",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/首页1.png",
+        "selectedIconPath": "pages/images/首页1.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "pages/images/购买.png",
+        "selectedIconPath": "pages/images/购买.png"
+      },
+      {
+        "pagePath": "pages/huiyuan/huiyuan",
+        "text": "会员中心",
+        "iconPath": "pages/images/会员.png",
+        "selectedIconPath": "pages/images/会员.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/我的.png",
+        "selectedIconPath": "pages/images/我的.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 3000,
+    "uploadFile": 3000,
+    "downloadFile": 3000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

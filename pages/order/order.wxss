@@ -1,0 +1,62 @@
+/* 潮·总监字体设置 */
+.title {
+  color: rgb(30, 131, 190);
+  text-align: center;
+  font-size: 24rpx;
+  margin-top: 20rpx; /* “潮·设计总监”文字和横线的距离 */
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper_box {
+  height: 750rpx;
+  width: 100%;
+}
+
+.hr {
+  height: 1px;
+  background-color: rgb(68, 84, 158);
+  margin-top: 5px;
+  opacity: 0.2;
+}
+
+.A {
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; *//* flex-wrap: wrap; */
+}
+
+.B {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  /* margin-bottom: 0rpx;  */
+}
+
+.scroll-view_x {
+  padding-left: 30rpx;
+}
+
+.item_list {
+  /* 总监图片之间的距离 */
+  width: 250rpx;
+  height: auto;
+  margin-right: 15rpx;
+  display: inline-block;
+}
+
+.item_list .title {
+  /* 总监字体大小 */
+  font-size: 24rpx;
+  color: rgb(175, 132, 76);
+  text-indent: 10rpx;
+  /* 中间显示 */
+  text-align: center;
+}
+
+.item_book_img {
+  width: 220rpx;
+}
