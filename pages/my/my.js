@@ -3,7 +3,8 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    other_list: ["账户信息","我的预约", "消费记录", "意见反馈"]
   },
   onLoad: function() {
     if (app.globalData.userInfo) {

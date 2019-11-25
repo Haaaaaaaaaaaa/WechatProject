@@ -1,1 +1,14 @@
-/* pages/contact/contact.wxss */
+.other_list_item{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.other_item_tile{
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  color: #333333
+}

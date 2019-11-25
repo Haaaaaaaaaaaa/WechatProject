@@ -1,32 +1,25 @@
 /* 获取用户信息显示位置设置 */
-
 .userinfo {
   background-color: rgb(240, 233, 233);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 /* 用户头像图片设置 */
-
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
-
 /* 用户信息昵称字体设置 */
-
 .userinfo-nickname {
   color: rgb(24, 3, 3);
 }
- 
 .KG {
   height: 30px;
   background-color: rgb(240, 233, 233);
 }
-
 .user-header {
   width: 100%;
   height: 448rpx;
@@ -35,7 +28,6 @@
   box-sizing: border-box;
   background: linear-gradient(to top left, #595959, #bcbcbc);
 }
-
 .user-img {
   width: 196rpx;
   height: 196rpx;
@@ -45,13 +37,11 @@
   border-radius: 50%;
   box-shadow: 1rpx 4rpx 5rpx #5b5b5b;
 }
-
 .icon-weixin {
   padding-top: 24rpx;
   font-size: 140rpx;
   color: rgb(153, 153, 153);
 }
-
 .user-header .login-btn {
   width: 300rpx;
   height: 80rpx;
@@ -63,17 +53,13 @@
   border-radius: 4rpx;
   box-sizing: border-box;
 }
-
 .user-header .other-button-hover {
   background-color: rgb(255, 255, 255);
 }
-
 /* 背景颜色 */
-
 .user-article {
   background-color: rgb(240, 233, 233);
 }
-
 .user-order {
   display: flex;
   width: 100%;
@@ -83,27 +69,21 @@
   border-bottom: 1rpx solid rgb(216, 216, 216);
   box-sizing: border-box;
 }
-
 /* 全部订单 */
-
 .order-all {
   width: 630rpx;
   font-size: 28rpx;
   color: rgb(240, 146, 23);
 }
-
 /* 查看 */
-
 .order-look {
   font-size: 24rpx;
   color: rgb(240, 146, 23);
 }
-
 .icon-right {
   display: inline-block;
   vertical-align: -4rpx;
 }
-
 .order-class {
   display: flex;
   width: 100%;
@@ -112,7 +92,6 @@
   flex-direction: row;
   align-items: center;
 }
-
 .item-order {
   width: 20%;
   height: 155rpx;
@@ -120,7 +99,6 @@
   text-align: center;
   color: rgb(153, 153, 153);
 }
-
 .item-order .iconfont {
   width: 80rpx;
   height: 80rpx;
@@ -128,16 +106,38 @@
   margin-bottom: 10rpx;
   font-size: 80rpx;
 }
-
 /* 代发货、待付款等字体设置 */
-
 .item--order-text {
   line-height: 34rpx;
   font-size: 24rpx;
   color: #ee7b0f;
 }
-
 .img {
   width: 30px;
   height: 30px;
+}
+/* 账户信息、我的预约的样式规则 */
+.order_image{
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  width: 17px;
+  height: 17px;
+}
+.other_list_item{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.other_item_tile{
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  color: #333333
+}
+.other_list_image{
+  top:16.5px;
 }

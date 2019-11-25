@@ -54,4 +54,10 @@
       <text class="item--order-text">退款/售后</text>
     </navigator>
   </view>
+       <view wx:for-items = "{{other_list}}" class = "other_list_item" bindtap="listItemClick" id="{{index}}">
+            <text class = "other_item_tile">{{item}}</text>
+            <image src="../images/My/rightTrangle.png" class = "order_image other_list_image"></image>
+            <view style = "position:absolute;background-color:#F5F5F5;height:1px;width:100%;bottom:0px;rihgt:0px;"></view>
+        </view>
+
 </view>

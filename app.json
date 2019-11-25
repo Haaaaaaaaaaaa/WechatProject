@@ -3,12 +3,13 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/shop/shop",
-    "pages/huiyuan/huiyuan",
+    "pages/cart/cart",
     "pages/my/my",
     "pages/order/order",
     "pages/taocan/taocan",
     "pages/coupon/coupon",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -35,10 +36,10 @@
         "selectedIconPath": "pages/images/购买.png"
       },
       {
-        "pagePath": "pages/huiyuan/huiyuan",
-        "text": "会员中心",
-        "iconPath": "pages/images/会员.png",
-        "selectedIconPath": "pages/images/会员.png"
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/images/购物车.png",
+        "selectedIconPath": "pages/images/购物车.png"
       },
       {
         "pagePath": "pages/my/my",
